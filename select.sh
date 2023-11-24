@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Enter file name"
 read filename
-PS3="choose form choosese"
+PS3="Choose from these options"
 select n in "create file" "edit file" "run file as script " "remove file"
 do
 	case $REPLY in
@@ -13,6 +13,6 @@ do
 			break ;;
 		4) rm -r $filename
 		       	break ;;
-		*)echo "your choice not found ,please choose form list";;
+		*)echo "your choice not found ,please choose from list";;
 	esac
 done
