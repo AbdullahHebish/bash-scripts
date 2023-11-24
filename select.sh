@@ -2,7 +2,7 @@
 echo "Enter file name"
 read filename
 PS3="Choose from these options"
-select n in "create file" "edit file" "run file as script " "remove file"
+select n in "create file" "edit file" "execute file " "remove file"
 do
 	case $REPLY in
 		1) touch $filename 
